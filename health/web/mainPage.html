@@ -1,0 +1,279 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Home</title>
+<!--link for special icons in footer-->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+<style>
+@import url(https://fonts.googleapis.com/css?family=Shrikhand);
+#top_back{
+width:100%;
+height:330px;
+background:						#6495ED;
+border:0px;
+padding:0px;
+}
+#nameStyle{
+color: 	#000080;
+font-family: 'Shrikhand';
+font-style: italic;
+font-size: 80px;
+margin-top:5px;
+padding-top:5px;
+text-align:center;
+
+}
+
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color:				#191970;
+	height:80px;
+	 text-align: center;
+}
+
+li {
+    float: left;
+	margin-right:40px;
+	 text-align: center;
+	 font-family: 'Shrikhand';
+}
+
+li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+	height:80px;
+	font-family: 'Shrikhand';
+	
+}
+
+li a:hover:not(.active) {
+    background-color: 	#6A5ACD;
+}
+
+.active {
+    background-color: 			#6A5ACD;
+}
+.dropbtn{
+float:right;
+margin-right:30px;
+margin-top:20px;
+background-color: #191970;
+    color: white;
+    
+    font-size: 16px;
+	padding-top:16px;
+	padding-bottom:30px;
+    border: none;
+    cursor: pointer;
+	width:200px;
+	height:40px;
+	text-align:center;
+	font-family: 'Shrikhand';
+}
+.dropbtn:hover {
+    background-color: 	#6A5ACD;
+}
+#feeling
+{
+ text-align:center;
+ color:#191970;
+ font-size:60px;
+ font-family: 'Shrikhand';
+}
+
+input[type=text]{
+    width: 40%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    box-sizing: border-box;
+    border: 3px solid #ccc;
+    -webkit-transition: 0.5s;
+    transition: 0.5s;
+    outline: none;
+	background-image: url('images/searchicon.png');
+    background-position: 10px 10px; 
+}
+input[type=text]:focus {
+    border: 3px solid #555;
+}
+input:focus {
+    background-color: #4169E1;
+}
+#SearchBtn
+{
+ width: 18%;
+    padding: 10px;
+    background: #2196F3;
+    color: white;
+    font-size: 17px;
+    border: none;
+    cursor: pointer;
+	height:46px;
+}
+#SearchBtn:hover {
+    background: #191970;
+}
+.header1 {
+
+height:300px;
+margin:0px;
+background-size:cover;
+padding:0px;
+position:relative;
+
+}
+.w3-animate-fading{animation:fading 4s infinite}
+@keyframes fading{0%{opacity:0} 50%{opacity:1} 100%{opacity:0}}
+.display-left{position:absolute;top:150%;left:0%;transform:translate(0%,-50%);-ms-transform:translate(-0%,-50%)}
+.w3-button{-webkit-touch-callout:none;-webkit-user-select:none; background-color:Darkgrey; border:none; color:white; font-size:25px;cursor:pointer;}
+.w3-button:hover{
+background-color:Dodgerblue;
+}
+.display-right{position:absolute;top:150%;right:0%;transform:translate(0%,-50%);-ms-transform:translate(0%,-50%)}
+.main {
+ 
+  margin-top:70 px;
+ height:270px;
+width:100%;
+
+}
+
+#practice{
+width:100%;
+height:550px;
+background:		#7B68EE;
+border:0px;
+padding:0px;
+
+}
+
+#five_star
+{
+    padding-top:100px;
+	padding-left:50px;
+ color:#191970;
+ font-size:55px;
+}
+
+.register{
+margin-left:85px;
+background-color: 	#8B008B;
+    color: white;
+    
+    font-size: 16px;
+	padding-top:16px;
+	padding-bottom:30px;
+    border: none;
+    cursor: pointer;
+	width:300px;
+	height:38px;
+	text-align:center;
+}
+.register:hover {
+    background-color: #483D8B;
+	color: white;
+}
+#footer1
+{
+ height:100px;
+    color: #483D8B;
+    background-color: 			#4169E1;
+}
+
+</style>
+</head>
+
+<body style="background-color:#F0F8FF">
+<div id="top_back">
+<span>
+<img src="images\logoHealth.jpg" style="height:80px;width:80px; padding-top:10px;padding-left:20px;"></span>
+<span id="nameStyle">Health Care</span>
+<button type="submit" class="dropbtn" onclick="window.location.href='login.html'" >Login</button>
+<button class="dropbtn" onclick="window.location.href='Doctor.jsp'">Sign in/ Join</button>
+<ul>
+  <li><a class="active" href="">Home</a></li>
+  <li><a onclick="window.location.href='view_expertise.jsp'" >Expertise</a></li>
+  <li><a href="ContactUs.html">Contact</a></li>
+  <li><a href="AboutUs.html">About</a></li>
+</ul>
+<h1 id="feeling"> Feeling meh? Find a Doctor.</h1>
+</div>
+<form action="Select_Appointment.jsp">
+ <input type="text" name="disease" placeholder="Illness body part" required>
+  <input type="text" name="location" placeholder="Your Location" required>
+  <button type="submit" id="SearchBtn" ><i class="fa fa-search"></i></button>
+</form>
+<div class="main">
+<div class="header1" style="max-width:100%;max-height:150px;">
+  
+  <img class="mySlides w3-animate-fading" src="images\s1.jpg" style="width:100%;height:370px">
+  <img class="mySlides w3-animate-fading" src="images\s2.jpg" style="width:100%;height:370px">
+  <img class="mySlides w3-animate-fading" src="images\s3.jpg" style="width:100%;height:370px">
+  <img class="mySlides w3-animate-fading" src="images\s4.jpg" style="width:100%;height:370px" >
+  
+ <button class="w3-button  display-left" onclick="plusDivs(-1)">&#10094;</button>
+  <button class="w3-button display-right" onclick="plusDivs(1)">&#10095;</button>
+
+</div>
+</div>
+<br><br><br><br>
+<div id="practice">
+<h1 id="five_star"> Are You A Five Star Doctor?</h1>
+<h2 style="padding-left:70px;color:#191970;">Register Yourself To Reach Million Of Patients</h2><br>
+   <h3 style="padding-left:90px;color:#191970;"> 1. Attract and engage new patients<br><br>
+    2. Build and strengthen your online reputation<br><br>
+    3. Deliver a premium experience patients love<br><br>
+	</h4>
+	<button class="register" onclick="window.location.href='Doctor.jsp'">Register in Health Care</button>
+</div>
+<br><br>
+
+<script>
+var myIndex = 0;
+auto();
+
+function auto() {
+    var i;
+    var x = document.getElementsByClassName("mySlides");
+    for (i = 0; i < x.length; i++) {
+       x[i].style.display = "none";  
+    }
+    myIndex++;
+    if (myIndex > x.length) {myIndex = 1}    
+    x[myIndex-1].style.display = "block";  
+    setTimeout(auto, 3000);    
+}
+
+</script>
+<script>
+
+var slideIndex = myIndex;
+showDivs(slideIndex);
+
+function plusDivs(n) {
+  showDivs(slideIndex += n);
+}
+
+function showDivs(n) {
+  var i;
+  var x = document.getElementsByClassName("mySlides");
+  if (n > x.length) {slideIndex = 1}    
+  if (n < 1) {slideIndex = x.length}
+  for (i = 0; i < x.length; i++) {
+     x[i].style.display = "none";  
+  }
+  x[slideIndex-1].style.display = "block";  
+}
+</script>
+
+</body>
+
+
+</html>
